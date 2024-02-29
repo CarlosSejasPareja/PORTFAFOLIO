@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página de Portafolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mi Portafolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#acerca-de-mi">Acerca de Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resumen-de-habilidades">Resumen de Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portafolio">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección: Acerca de Mí -->
+  <section id="acerca-de-mi" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Carlos Sejas </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum libero, vel pellentesque odio varius sit amet. Nullam non dapibus ipsum. Nullam fermentum eros non sapien consequat, et fermentum nulla eleifend. Curabitur sit amet libero nec turpis tristique tincidunt eget ac arcu. Ut in purus sapien. Maecenas lacinia nisi nec posuere malesuada. Fusce vulputate, libero vitae tincidunt commodo, quam eros viverra ligula, vel dapibus metus eros eget mi.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img id="foto-perfil" src="me.png" alt="Foto de Carlos" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Resumen de Habilidades -->
+  <section id="resumen-de-habilidades" class="py-5 bg-light">
+    <div class="container">
+        <h2>HABILIDADES</h2>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <img src="css.png" alt="CSS" class="img-fluid mx-auto d-block" style="max-width: 180px;">
+            <h4>CSS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum libero.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCSS">VER</button>
+          </div>
+          <div class="col-md-6 mb-3">
+            <img src="pythonlogo.png" alt="HTML" class="img-fluid mx-auto d-block" style="max-width: 180px;">
+            <h4>HTML</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum libero.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalHTML">VER</button>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <img src="js.png" alt="JavaScript" class="img-fluid mx-auto d-block" style="max-width: 180px;">
+              <h4>JAVASCRIPT</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum libero.</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modalJavaScript">VER</button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="descargar.png" alt="C++" class="img-fluid mx-auto d-block" style="max-width: 180px;">
+                <h4>C++</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum libero.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalJavaScript">VER</button>
+              </div>
+          </div>
+    </div>
+  </section>
+    <!-- Modales Bootstrap -->
+    <div class="modal fade" id="modalCSS" tabindex="-1" role="dialog" aria-labelledby="modalCSSLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCSSLabel">CSS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Contenido del modal para CSS.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal fade" id="modalHTML" tabindex="-1" role="dialog" aria-labelledby="modalHTMLLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalHTMLLabel">HTML</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Contenido del modal para HTML.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal fade" id="modalJavaScript" tabindex="-1" role="dialog" aria-labelledby="modalJavaScriptLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalJavaScriptLabel">JavaScript</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Contenido del modal para JavaScript.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Sección: Portafolio -->
+  <section id="portafolio" class="py-5">
+    <div class="container">
+      <h2>Portafolio</h2>
+      <!-- Contenido de la sección Portafolio -->
+    </div>
+  </section>
+
+  <!-- Sección: Servicios -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h2>Servicios</h2>
+      <!-- Contenido de la sección Servicios -->
+    </div>
+  </section>
+
+ 
+  <!-- Sección: CONTACTO -->
+  <section id="contacto" class="py-5">
+    <div class="container text-center">
+      <h2>CONTACTO</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/59165349729" target="_blank"><img src="whatapp.png" alt="WhatsApp" class="img-fluid" style="max-width: 80px; ></a>
+        </div>
+        <div class="col-md-6 mb-3">
+          <a href="https://www.instagram.com/javicharlss/" target="_blank"><img src="insta.png" alt="Instagram" class="img-fluid" style="max-width: 60px;  ></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
